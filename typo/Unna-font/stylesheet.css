@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Unna';
+    src: url('Unna-Regular.woff2') format('woff2'),
+        url('Unna-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('Unna-BoldItalic.woff2') format('woff2'),
+        url('Unna-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('Unna-Bold.woff2') format('woff2'),
+        url('Unna-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('Unna-Italic.woff2') format('woff2'),
+        url('Unna-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

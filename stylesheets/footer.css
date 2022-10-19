@@ -1,0 +1,106 @@
+footer{
+    background-color: #D9D4C1;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 30px;
+}
+.textes{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-around;
+}
+.titrecontactfooter{
+    text-transform: uppercase;
+    width: 120px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.titrehorairesfooter{
+    text-transform: uppercase;
+    width: 130px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.titretarifsfooter{
+    text-transform: uppercase;
+    width: 90px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.textefooter{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divtextesfooter{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+
+}
+
+a.boutonvert{
+    border: solid 2px #4a746b;
+    padding: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+
+}
+a.boutonvert:active{
+    animation: nope .4s forwards;
+}
+@keyframes nope{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(-15px);
+    }
+    40%{
+        transform: translateX(15px);
+    }
+    60%{
+        transform: translateX(-15px);
+    }
+    80%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+p.texteboutonvert{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #4a746b;    
+}
+
+.mentionlegal{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /*line-height: 24px;*/
+    text-transform: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.mentions{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px;
+    margin-top: 100px;
+}

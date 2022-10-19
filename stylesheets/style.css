@@ -1,0 +1,131 @@
+html, body{
+    background-color: #f3f0e9;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 400vh;
+}
+
+.title{
+    width: 100vw;
+    padding-left: 27%;
+    padding-top: 25%;
+    position: relative;
+}
+
+
+.ti{
+    display: block;
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 1500px;
+}
+
+.musee{
+    font-size: 80px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.musee span.musee_span {
+    font-size: 60px;
+}
+
+.ligne{
+    height: 100vh;
+    width: 100vw;
+
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.ligne1{
+    height: 1px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #1d1d1b;
+    animation: apparition1 2s ease-in;
+}
+
+@keyframes apparition1{
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+.ligne3{
+    height: 1px;
+    width: 100vw;
+    position: absolute;
+    background-color: #1d1d1b;
+    left: 0;
+    bottom: 0;
+    transform: translateY(400px);
+}
+
+.ligne2{
+    margin-left: 26%;
+    width: 1px;
+    height: 400vh;
+    background-color: #1d1d1b;
+    animation: apparition2 10s ease-out;
+}
+
+@keyframes apparition2{
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 400vh;
+    }
+}
+
+.boutonv{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 70%;
+}
+
+.tarif{
+    margin-left: 26%;
+    height: 250px;
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #000;
+}
+
+.tari{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}   
+
+.titre1{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.55cm;
+}
+
+.ligne4{
+    position: absolute;
+    bottom: 20px;
+    height: 1px;
+    width: 58%;
+    background-color: #000;
+}

@@ -1,0 +1,244 @@
+body{
+    background: linear-gradient(180deg, #D9D4C1 20%, #F3F0E9 30.02%, #F3F0E9 100%);
+}
+
+header.navigation{
+    background-color: #1D1D1B;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+header.navigation li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F3F0E9;
+}
+
+.boutonnav::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F3F0E9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .6s cubic-bezier(.165,.84,.44,1);
+    transform-origin: right;
+}
+.boutonnav:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.boutonnav{
+    position: relative;
+}
+
+.section-bouton {
+    margin-top: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.boutonvert{
+    border: solid 2px #4a746b;
+    padding: 18px;
+    text-decoration: none;
+}
+.texteboutonvert{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #4a746b;    
+}
+
+.titre h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vw;
+    flex-wrap: wrap;
+}
+
+.fil-ariane {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article1 p {
+    display: flex;
+    justify-content: space-between ;
+    }
+
+.article1 .premiere-partie{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 25%;
+    padding-right: 22%;
+}
+
+.deuxieme-partie {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.deuxieme-partie img {
+    margin-right: 5vw;
+}
+
+.deuxieme-partie .texte {
+    max-width: 600px;
+    justify-content: space-evenly;
+}
+
+.deuxieme-partie .texte .premier-texte {
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+.deuxieme-partie .texte .deuxieme-texte {
+    margin-bottom: 4%;
+    margin-left: 12%;
+}
+
+.troisieme-partie {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+
+.troisieme-partie .image3article1 {
+    margin-left: 5vw;
+}
+
+.troisieme-partie .texte {
+    max-width: 600px;
+    justify-content: space-evenly;
+}
+
+.troisieme-partie .texte .texte-un {
+    margin-bottom: 4%;
+}
+
+.troisieme-partie .texte .texte-deux {
+    margin-bottom: 4%;
+}
+
+footer{
+    background-color: #D9D4C1;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 10%;
+}
+.textes{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-around;
+}
+.titrecontactfooter{
+    text-transform: uppercase;
+    width: 120px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.titrehorairesfooter{
+    text-transform: uppercase;
+    width: 130px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.titretarifsfooter{
+    text-transform: uppercase;
+    width: 90px;
+    padding-bottom: 0px;
+    border-bottom: solid 1px;
+}
+.textefooter{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 350px; 
+}
+.divtextesfooter{
+    padding: 3%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.boutonvert{
+    border: solid 2px #4a746b;
+    padding: 18px;
+    text-decoration: none;
+}
+.texteboutonvert{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #4a746b;    
+}
+
+.mentionlegal{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /*line-height: 24px;*/
+    text-transform: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.mentions{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px;
+    margin-top: 100px;
+    background-color: #F3F0E9;
+}
+
+li {
+    list-style-type: none;
+}

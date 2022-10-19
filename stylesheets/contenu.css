@@ -1,0 +1,21 @@
+/* sous titre */
+h2{
+    font-family:'Montserrat';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 125% */
+    /* noiare marroné */
+    color: #35140D;
+}
+
+/*texte de contenu*/
+p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    /* or 167% */
+    /* noiare marroné */
+    color: #35140D;
+}

@@ -1,0 +1,12 @@
+.boutons{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+}

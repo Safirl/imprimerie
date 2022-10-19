@@ -1,0 +1,42 @@
+.cadre_titre_exposition{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f0e9;
+    margin-top: 400px;
+    padding-bottom: 30px;
+}
+
+.div_img_expo1{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.img_expo1{
+    z-index: 1;
+    width: 60vw;
+    height: auto;
+    margin-top: 20%;
+}
+
+.partie1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.gras_petit{
+    font-weight: 500;
+}
+
+.gras_moyen{
+    font-weight: 600;
+}
+
+.gras_gros{
+    font-weight: 700;
+}
