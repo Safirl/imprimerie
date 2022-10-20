@@ -49,7 +49,6 @@ a.boutonvert{
     text-decoration: none;
     cursor: pointer;
     z-index: 1;
-
 }
 a.boutonvert:active{
     animation: nope .4s forwards;

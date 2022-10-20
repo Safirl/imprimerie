@@ -8,11 +8,20 @@ body{
     height: 400vh;
 }
 
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    margin-top: 75px;
+
+}
+
 .title{
-    width: 100vw;
-    padding-left: 27%;
-    padding-top: 25%;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -22,7 +31,8 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    width: 1500px;
+    height: 160px;
+    margin-right: 70px;
 }
 
 .musee{
@@ -95,9 +105,9 @@ body{
 
 .boutonv{
     display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-left: 70%;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 .tarif{
@@ -129,3 +139,4 @@ body{
     width: 58%;
     background-color: #000;
 }
+
