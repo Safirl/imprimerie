@@ -10,27 +10,41 @@
         <link rel="stylesheet" href="typo/Unna-font/stylesheet.css" />
         <link rel="stylesheet" href="stylesheets/header.css" />
         <link rel="stylesheet" href="stylesheets/footer.css" />
-        <link rel="stylesheet" href="stylesheets/style.css" />
         <link rel="stylesheet" href="stylesheets/expo.css" />
+        <link rel="stylesheet" href="stylesheets/style.css" />
         <title>homepage</title>
     </head>
     <body>
+
         <header>
-            <nav>
+            <nav class="nav-desktop">
                 <a href="index.html">
                     <img src="images/logo.svg" alt="MAI" />
                 </a>
 
                 <a class="boutonnav"> AGENDA </a>
 
-                <a class="boutonnav" href="event1.html"> EXPOSITIONS </a>
+                <a class="boutonnav2" href="event1.html"> EXPOSITIONS </a>
 
                 <a class="boutonnav"> CONTACT </a>
 
                 <img src="images/loupe.svg" alt="loupe" />
             </nav>
+
+            <nav class="nav-mobil">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="MAI" />
+                </a>
+                <a class="hamburger">
+                    <div class="traits-hamburger"></div>
+                    <div class="traits-hamburger"></div>
+                    <div class="traits-hamburger"></div>
+                </a>
+            </nav>
         </header>
+
         <main>
+
             <section class="title">
                 <div class="ti">
                     <h1 class="musee">
@@ -59,10 +73,10 @@
             <section class="tarif">
                 <div class="tari">
                     <h2 class="t">Tarifs &nbsp</h2>
-                    <p>Scolaire / Etudiant &nbsp</p>
-                    <h2>5 € &nbsp</h2>
-                    <p>Adulte &nbsp</p>
-                    <h2>8 €</h2>
+                    <p class="t">Scolaire / Etudiant &nbsp</p>
+                    <h2 class="t">5 € &nbsp</h2>
+                    <p class="t">Adulte &nbsp</p>
+                    <h2 class="t">8 €</h2>
                 </div>
             </section>
 
@@ -87,7 +101,7 @@
                         <br />
                         <br />
                         <br />
-                        <p>
+                        <p class="actutexte1">
                             Leur particularité est d’être toujours en lien
                             direct avec nos métiers ou nos activités. Que ce
                             soit la
@@ -102,68 +116,213 @@
                         </p>
                     </div>
                 </div>
+                <!-- <div class="ligne9"></div> -->
+                <!-- <div class="ligne10"></div> -->
+                <!-- <div class="ligne11"></div>
+                <div class="ligne12"></div> -->
             </section>
-        </main>
-
-        <!--
+        
             <div class="partie2">
-                <h2 class="soustitre2">Le Musée de l’imprimerie dispose d’un fonds de <spam>2 000</spam></h2>
-                <p>Estampes originales d’<spam>artistes</spam> nationaux et <spam>internationaux</spam>, toutes réalisées sur les presses du musée. Ces <spam>œuvres</spam> sont à la disposition des organismes intéressés sous forme d’<spam>expositions</spam> « clés en main ».</p>
+                <div class="cadre_expo2">
+                    <div class="texte-expo2">
+                        <h2 class="soustitre2">Le Musée de l’imprimerie dispose d’un fonds de <span class="gras_moyen">2 000</span></h2>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="actutexte2">Estampes originales d’<span class="gras_gros">artistes</span> nationaux et <span class="gras_petit">internationaux</span>, toutes réalisées sur les presses du musée. Ces <span class="gras_moyen">œuvres</span> sont à la disposition des organismes intéressés sous forme d’<span class="gras_gros">expositions</span> « clés en main ».</p>
+                    </div>
+                    <img class="img_expo2" src="images/img_expo2.svg">
+                </div>
             </div>
 
             <div class="partie3">
-                <h2>
-                    Les moyens <spam>techniques</spam> du Musée sont mis à la disposition des <spam>artistes</spam>
-                </h2>
-                <p>
-                    Afin qu’ils aient la possibilité de diversifier et d’étendre l’exercice de leur art par l’intermédiaire de la <spam>typographie</spam>, de la lithographie, de la taille-douce ou de la linogravure. <spam>Vous</spam> disposez des matériels nécessaires pour pourvoir parfaitement exercer et diversifier l’exercice de <spam>votre art.</spam>
-                </p>
-            </div> -->
-
-        <!-- <section class="STAGES">
-        <div class="stage">
-            <h1>STAGES</h1>
-            <P>À l’heure du multimédia, découvrez le conservatoire des matériels, des gestes et des métiers du Livre.</P>
-            <h2 class="boutonstage1">enfants</h2>
-            <h2 class="boutonstage2">adultes</h2>
-        </div>
-    </section>
-
-
-    <section class="Actualites">
-        <div class="Actualite">
-            <h1>Actualités</h1>
-            <h1>2021</h1>
-            <div class="octobre">
-                <h1 > octobre</h1>
-                <div class="octobre1">
-                    <h1>10</h1>
-                    <h2>Le Tigre et le Président, un nouveau film au musée</h2>
-                    <p>Après Le Libertin de Gabriel Aghion,  Les Illusions perdues de Xavier Giannoli,  le Musée-Atelier de l’Imprimerie est fier d’avoir participé à la réalisation du très beau film Le Tigre et le Président ! Merci à André Dussolier, Jacques Gamblin, et au réalisateur, Jean-Marc Peyrefitte, pour leur […]</p>
-                </div>
-                <div class="octobre2">
-                    <h1>21</h1>
-                    <h2>Xavier Giannoli au Musée avec le tournage des Illusions perdues de Balzac</h2>
-                    <p>C’est au Musée de l’imprimerie à Nantes que quelques séquences ont été tournées pour le film de Xavier Giannoli  Les Illusions perdues d’Honoré de Balzac. La grosse presse Voirin a imprimé la page de journal. Pour les besoins du film, le Musée a prêté plusieurs machines qui ont servi à la reconstitution d’un atelier d’imprimerie.</p>
-                </div>
-                <h1>NOVEMBRE</h1>
-                <div class="novembre">
-                    <h1>25</h1>
-                    <h2>Cure de rajeunissement</h2>
-                    <p>Tout change. Le musée de l’imprimerie avec sa nouvelle appellation (MAI Musée Atelier de l’Imprimerie) s’offre une cure de rajeunissement sur l’extérieur. L’intérieur aussi est totalement renouvelé : tant dans son accueil (hall plus large) que dans la partie exposition. Découvrez ces nouveautés. Et bien sûr […]</p>
-                </div>
-                <h1>2022</h1>
-                <h1>janvier</h1>
-                <div class="janvier">
-                    <h1>26</h1>
-                    <h2>Une personnalité visite le musée</h2>
-                    <p>Malgré un emploi du temps chargé, Jean-Luc Mélenchon s’est offert une petite capsule hors du temps en visitant le Musée de l’imprimerie de Nantes, qui rappelle la première et immense innovation technologique en Europe.</p>
+                <div class="cadre_expo2 cadre_expo3">
+                    <div class="texte-expo3">
+                        <h2 class="soustitre3">
+                            Les moyens <span class="gras_gros">techniques</span> du Musée sont mis à la disposition des <span class="gras_moyen">artistes</span>
+                        </h2>
+                        <br><br><br>
+                        <p class="actutext3">
+                            Afin qu’ils aient la possibilité de diversifier et d’étendre l’exercice de leur art par l’intermédiaire de la <span class="gras_moyen">typographie</span>, de la lithographie, de la taille-douce ou de la linogravure. <span class="gras_gros">Vous</span> disposez des matériels nécessaires pour pourvoir parfaitement exercer et diversifier l’exercice de <span class="gras_petit">votre art.</span>
+                        </p>
+                    </div>
+                    <img class="img_expo3" src="images/img_expo3.svg">
                 </div>
             </div>
-        </div>
-    </section> -->
 
+            <section class="boutonv btn_savoir_plus">
+                <a class="boutonvert">
+                    <p class="texteboutonvert">en savoir plus</p>
+                </a>
+            </section>
+
+            <div class="ligne7"></div>
+
+            <div class="cadre_titre_exposition cadre_titre_stages">
+                <h1 class="titre1">stages</h1>
+                <div class="ligne5"></div>
+            </div>
+
+            <section class="stages">
+                <P class="texte_stages" >À l’heure du multimédia, découvrez le conservatoire des matériels, des gestes et des métiers du Livre.</P>
+                <div class="img_stages">
+                    <img src="images/img_stage1.svg" alt="stages pour enfants">
+                    <img src="images/img_stage2.svg" alt="stages pour adultes">
+                </div>
+            </section>
+
+            <div class="ligne8"></div>  
+
+            <section class="actualites">
+                                    <!-- ACTU1 -->
+                <div class="cadre_titre_exposition gros_titre_actu">
+                    <h1 class="titre1">actualités</h1>
+                    <div class="ligne6"></div>
+                </div>
+
+                <div class="la_div_center">
+                    <div class="actu_img_date no_margin">
+                        <h1 class="date_actu">10 octobre 2021</h1>
+                        <img class="imgactu" src="images/img_actu1.svg">
+                    </div>
+                </div>
+
+                <div class="div_texte">
+                <div class="texte_actu">
+                    <h2 class="actusoustitre">Le Tigre et le Président, un <span class="gras_moyen">nouveau</span> film au musée</h2>
+                    <br>
+                    <p class="actutext_">Après Le Libertin de <span class="gras_gros">Gabriel Aghion</span>,  Les Illusions perdues de <span class="gras_gros">Xavier Giannoli</span>,  le Musée-Atelier de l’Imprimerie est <span class="gras_petit">fier</span> d’avoir <span class="gras_petit">participé</span> à la réalisation du très beau film Le Tigre et le Président ! <span class="gras_moyen">Merci</span> à André Dussolier, Jacques Gamblin, et au réalisateur, Jean-Marc Peyrefitte, pour leur […]</p>
+                </div>
+
+                </div>
+                                    <!-- ACTU2 -->
+                <div class="la_div_center">
+                    <div class="actu_img_date no_margin">
+                        <h1 class="date_actu">21 octobre 2021</h1>
+                        <img  class="imgactu" src="images/img_actu2.svg">
+                    </div>
+                </div>
+
+                    <div class="div_texte">
+                    <div class="texte_actu">
+                        <h2 class="actusoustitre" ><span class="gras_moyen">Xavier Giannoli</span> au Musée avec le tournage des Illusions perdues de Balzac</h2>
+                        <br>
+                        <p class="actutext_">C’est au Musée de l’imprimerie à <span class="gras_moyen">Nantes</span> que quelques séquences ont été tournées pour le <span class="gras_petit">film de Xavier Giannoli</span> : Les Illusions perdues d’Honoré de Balzac. La grosse presse Voirin a imprimé la page de journal. Pour les besoins du film, le Musée a <span class="gras_petit">prêté</span> plusieurs machines qui ont servi à la <span class="gras_moyen">reconstitution d’un atelier</span> d’imprimerie.</p>
+                    </div>
+
+                </div>
+                                    <!-- ACTU3 -->
+                <div class="la_div_center">
+                    <div class="actu_img_date no_margin">
+                        <h1 class="date_actu">25 novembre 2021</h1>
+                        <img  class="imgactu" src="images/img_actu3.svg">
+                    </div>
+                </div>
+
+                <div class="div_texte">
+                    <div class="texte_actu">
+                        <h2 class="actusoustitre">Cure de rajeunissement</h2>
+                        <br>
+                        <p class="actutext_">Tout change. Le musée de l’imprimerie avec sa <span class="gras_gros">nouvelle appellation</span> (MAI Musée Atelier de l’Imprimerie) s’offre une cure de <span class="gras_petit">rajeunissement</span> sur l’extérieur. L’intérieur aussi est totalement <span class="gras_moyen">renouvelé</span> : tant dans son accueil (hall plus large) que dans la partie exposition. Découvrez ces <span class="gras_moyen">nouveautés</span>. Et bien sûr […]</p>
+                    </div>
+                </div>
+
+                                    <!-- ACTU4 -->
+                <div class="la_div_center">
+                    <div class="actu_img_date no_margin">
+                        <h1 class="date_actu">16 janvier 2022</h1>
+                        <img class="imgactu" src="images/img_actu4.svg">
+                    </div>
+                </div>
+
+                    <div class="div_texte">
+                    <div class="texte_actu">
+                        <h2 class="actusoustitre"><span class="gras_petit">Une personnalité</span> visite le musée</h2>
+                        <br>
+                        <p class="actutext_">Malgré un emploi du temps chargé, <span class="gras_moyen">Jean-Luc Mélenchon</span> s’est <span class="gras_petit">offert</span> une petite capsule hors du temps en <span class="gras_petit">visitant</span> le Musée de l’imprimerie de Nantes, qui rappelle la première et immense <span class="gras_gros">innovation technologique</span> en Europe.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="container">
+                <div class="textes">
+                    <div class="info">
+                        <p class="titretarifsfooter">contacts</p>
+                        <p class="textefooter">
+                            Le Musée de l’imprimerie de Nantes
+                            <br />
+                            est géré par l’association Pro arte graphica.
+                        </p>
+
+                        <p class="textefooter">
+                            ADRESSE
+                            <br />
+                            24 quai de la Fosse
+                            <br />
+                            44000 NANTES
+                            <br />
+                            Téléphone : 02 40 73 26 55
+                        </p>
+
+                        <p class="textefooter">
+                            Mail : info@musee-imprimerie.com
+                            <br />
+                            Instagram : @musee_imprimerie_nantes
+                        </p>
+                    </div>
+                    <div class="info">
+                        <p class="titretarifsfooter">horaires</p>
+                        <p class="textefooter">
+                            Ouvert du lundi au samedi
+                            <br />
+                            (juillet et août,
+                            <br />
+                            du lundi au vendredi)<br />
+                        </p>
+                        <p class="textefooter">
+                            De 10 h à 12 h
+                            <br />
+                            Et de 14 h à 17 h 30
+                        </p>
+                    </div>
+                    <div class="info">
+                        <p class="titretarifsfooter">tarifs</p>
+                        <p class="textefooter">
+                            Adultes : 8 €
+                            <br />
+                            Scolaires et étudiants : 5 €.
+                            <br />
+                            Gratuité et autres tarifs :
+                            <br />
+                            se renseigner au musée.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mentions">
+                <section class="container">
+                    <p class="mentionlegal">
+                        Le Musée de l'imprimerie de Nantes © copyright 2000-2022
+                        | Grafipolis | MESH | Mentions légales
+                    </p>
+                </section>
+            </div>
+        </footer>
+        
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="js/texte.js"></script>
     </body>
 </html>
+
+
+
+
+                    <!-- <a class="bouton_image_stage bouton_image_stage1"> -->
+                    <!-- </a> -->
+                    <!-- <a class="bouton_image_stage bouton_image_stage2"> -->
+                    <!-- </a> -->

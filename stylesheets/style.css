@@ -1,41 +1,44 @@
-html, body{
+html,
+body {
     background-color: #f3f0e9;
 }
 
-body{
+body {
     width: 100vw;
     overflow-x: hidden;
     height: 400vh;
 }
 
-main{
+main {
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
     margin-top: 75px;
-
+    /* background: red; */
 }
 
-.title{
+.title {
     position: relative;
     display: flex;
     justify-content: flex-end;
 }
 
-
-.ti{
+.ti {
     display: block;
     text-align: right;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    height: 160px;
     margin-right: 70px;
+    margin-top: 353px;
+    height: auto;
+    width: 891px;
+    background-color: #f3f0e9;
+    z-index: 1;
 }
 
-.musee{
+.musee {
     font-size: 80px;
     text-align: left;
     text-transform: uppercase;
@@ -45,98 +48,461 @@ main{
     font-size: 60px;
 }
 
-.ligne{
+.ligne {
     height: 100vh;
     width: 100vw;
-
-    
     position: absolute;
     top: 0;
     left: 0;
 }
 
-
-.ligne1{
+.ligne1 {
     height: 1px;
-    width: 100vw;
+    width: 150vw;
     position: absolute;
-    left: 0;
+    left: -300px;
     bottom: 0;
     background-color: #1d1d1b;
-    animation: apparition1 2s ease-in;
+    /* animation: apparition1 2s ease-in; */
 }
 
-@keyframes apparition1{
-    from{
+@keyframes apparition1 {
+    from {
         transform: translateX(-100vw);
     }
-    to{
+    to {
         transform: translateX(0px);
     }
 }
 
-
-.ligne3{
+.ligne3 {
+    position: absolute;
     height: 1px;
-    width: 100vw;
+    width: 150vw;
     position: absolute;
     background-color: #1d1d1b;
-    left: 0;
+    left: -250px;
     bottom: 0;
     transform: translateY(400px);
 }
 
-.ligne2{
-    margin-left: 26%;
+.ligne2 {
+    position: absolute;
+    margin-left: 200px;
     width: 1px;
-    height: 400vh;
+    height: 300vh;
     background-color: #1d1d1b;
-    animation: apparition2 10s ease-out;
+    /* animation: apparition2 10s ease-out; */
 }
 
-@keyframes apparition2{
-    from{
+@keyframes apparition2 {
+    from {
         height: 0vh;
     }
-    to{
+    to {
         height: 400vh;
     }
 }
 
-.boutonv{
+.boutonv {
     display: flex;
     justify-content: flex-end;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 93px;
+    margin-right: 78px;
 }
 
-.tarif{
-    margin-left: 26%;
+.tarif {
+    margin-left: 200px;
     height: 250px;
     margin-top: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: solid 1px #000;
+    background-color: #f3f0e9;
+    z-index: 2;
 }
 
-.tari{
+.tari {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-}   
+}
 
-.titre1{
+.titre1 {
     display: flex;
     justify-content: center;
     letter-spacing: 0.55cm;
 }
 
-.ligne4{
+.ligne4 {
     position: absolute;
     bottom: 20px;
     height: 1px;
     width: 58%;
     background-color: #000;
 }
+.ligne6 {
+    position: absolute;
+    bottom: 20px;
+    height: 1px;
+    width: 450px;
+    margin-right: 15px;
+    background-color: #000;
+}
+.ligne5 {
+    position: absolute;
+    bottom: 20px;
+    height: 1px;
+    width: 270px;
+    margin-right: 15px;
+    background-color: #000;
+}
+.ligne7 {
+    position: absolute;
+    height: 1px;
+    width: 500vw;
+    background-color: #000;
+    transform: translateX(-200vw);
+}
+.texte-expo2 {
+    width: 520px;
+}
+.texte-expo3 {
+    width: 600px;
+}
+.cadre_expo2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 400px;
+}
+.cadre_expo3 {
+    flex-direction: row-reverse;
+}
 
+.btn_savoir_plus {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.cadre_titre_stages {
+    margin-top: 400px;
+}
+
+.texte_stages {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_stages {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+section.stages img {
+    width: 85%;
+    height: 85%;
+    margin: 20px;
+}
+
+.img_expo2 {
+    margin-left: 30px;
+}
+.img_expo3 {
+    margin-right: 30px;
+}
+
+.gros_titre_actu {
+    margin-bottom: 300px;
+}
+
+.date_actu {
+    font-size: 16;
+}
+
+.texte_actu {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.div_texte {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.actu_img_date {
+    margin-left: 100px;
+}
+
+.ligne8 {
+    height: 1px;
+    width: 500vw;
+    background-color: #000;
+    transform: translateX(-200vw);
+}
+
+.ligne9 {
+    width: 300vw;
+    height: 1px;
+    background: #000;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+.ligne10 {
+    width: 1px;
+    height: 660px;
+    background: #000;
+    margin-left: 310px;
+    transform: translateY(-600px);
+}
+.ligne11 {
+    width: 300vw;
+    height: 1px;
+    background: #000;
+}
+.ligne12 {
+    width: 1px;
+    height: 660px;
+    background: #000;
+    margin-left: 310px;
+    transform: translateY(-600px);
+}
+
+@media screen and (max-width: 576px) {
+    .ti {
+        margin-left: 0px;
+        margin-bottom: 150px;
+        width: 400px;
+        margin-top: 150px;
+    }
+    .musee span.musee_span {
+        font-size: 36px;
+    }
+    h1.musee {
+        font-size: 50px;
+    }
+    main .boutonvert {
+        padding: 7px;
+    }
+    main .texteboutonvert {
+        font-size: 16px;
+    }
+    main section.boutonv {
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+    main .t {
+        font-size: 15px;
+    }
+    /* main .tarif{   
+    } */
+    main .ligne3 {
+        transform: translateY(195px);
+    }
+
+    main .titre1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    main .soustitre1 {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    main .actutexte1 {
+        font-size: 16px;
+    }
+    main .ligne2 {
+        height: 214vh;
+    }
+
+    main .img_expo2 {
+        margin-top: 20px;
+        width: 80vw;
+        height: auto;
+    }
+
+    main .cadre_expo2 {
+        flex-direction: column;
+    }
+
+    main .soustitre2 {
+        font-size: 18px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    main .actutexte2 {
+        font-size: 16px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    main .img_expo3 {
+        margin-top: 20px;
+        width: 80vw;
+        height: auto;
+    }
+
+    main .texte-expo3 {
+        flex-direction: column;
+    }
+
+    main .soustitre3 {
+        font-size: 18px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    main .actutext3 {
+        font-size: 16px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    main .texte_stages {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    main .img_stages {
+        flex-direction: column;
+    }
+
+    main .actu_img_date h1 {
+        font-size: 40px;
+    }
+
+    main .imgactu {
+        width: 80vw;
+        height: auto;
+    }
+
+    main .actusoustitre {
+        font-size: 20px;
+    }
+    main .actutext_ {
+        font-size: 18px;
+    }
+    .la_div_center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .no_margin {
+        margin: 0;
+    }
+    .div_texte {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .ti {
+        margin-left: 0px;
+        margin-bottom: 150px;
+        width: 400px;
+        margin-top: 150px;
+    }
+    main .boutonvert {
+        padding: 7px;
+    }
+    main section.boutonv {
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+
+    main .ligne3 {
+        transform: translateY(195px);
+    }
+
+    main .titre1 {
+        text-align: center;
+    }
+    main .soustitre1 {
+        margin-left: 0px;
+    }
+    main .ligne2 {
+        height: 214vh;
+    }
+
+    main .img_expo2 {
+        margin-top: 20px;
+        width: 80vw;
+        height: auto;
+    }
+
+    main .cadre_expo2 {
+        flex-direction: column;
+    }
+
+    main .soustitre2 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    main .actutexte2 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    main .img_expo3 {
+        margin-top: 20px;
+        width: 80vw;
+        height: auto;
+    }
+
+    main .texte-expo3 {
+        flex-direction: column;
+    }
+
+    main .soustitre3 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    main .actutext3 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    main .texte_stages {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    main .img_stages {
+        flex-direction: column;
+    }
+    main .imgactu {
+        width: 80vw;
+        height: auto;
+    }
+    .la_div_center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .no_margin {
+        margin: 0;
+    }
+    .div_texte {
+        display: flex;
+        justify-content: center;
+    }
+    .ligne8 {
+        transform: translateY(200px);
+    }
+}

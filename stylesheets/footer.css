@@ -1,105 +1,180 @@
-footer{
-    background-color: #D9D4C1;
+footer {
+    background-color: #d9d4c1;
+}
+
+.container {
     width: 100%;
-    left: 0px;
-    bottom: 0px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
 }
-.textes{
-    display:flex;
-    flex-direction:row;
-    width: 100%;
-    justify-content: space-around;
+
+.textes {
+    display: flex;
+    justify-content: flex-start;
 }
-.titrecontactfooter{
+
+.titrecontactfooter {
     text-transform: uppercase;
     width: 120px;
     padding-bottom: 0px;
     border-bottom: solid 1px;
 }
-.titrehorairesfooter{
+.titrehorairesfooter {
     text-transform: uppercase;
     width: 130px;
     padding-bottom: 0px;
     border-bottom: solid 1px;
 }
-.titretarifsfooter{
+.titretarifsfooter {
     text-transform: uppercase;
-    width: 90px;
     padding-bottom: 0px;
     border-bottom: solid 1px;
+    display: inline;
+    padding-bottom: 6px;
+    font-weight: 600;
 }
-.textefooter{
+
+p .titrehorairesfooter {
+    font-weight: 400;
+}
+p .titrecontactfooter {
+    font-weight: 400;
+}
+.textefooter {
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    font-size: 20px;
+    line-height: 24px;
 }
-.divtextesfooter{
+
+.textefootertarifs {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.divtextesfooter {
     width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
-
+    align-items: flex-start;
 }
 
-a.boutonvert{
-    border: solid 2px #4a746b;
-    padding: 18px;
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 1;
-}
-a.boutonvert:active{
-    animation: nope .4s forwards;
-}
-@keyframes nope{
-    0%{
-        transform: translateX(0px);
-    }
-    20%{
-        transform: translateX(-15px);
-    }
-    40%{
-        transform: translateX(15px);
-    }
-    60%{
-        transform: translateX(-15px);
-    }
-    80%{
-        transform: translateX(15px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-p.texteboutonvert{
-    font-family:'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    text-transform: uppercase;
-    color: #4a746b;    
-}
+/* .titrehorairesfooter {
+    padding-top: 50px;
+} */
 
-.mentionlegal{
-    font-family: 'Montserrat';
+.mentionlegal {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    /*line-height: 24px;*/
+    line-height: 24px;
     text-transform: none;
     color: #000000;
     text-transform: uppercase;
     font-size: 16px;
+    text-align: center;
 }
 
-.mentions{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.mentions {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: solid 1px;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.info {
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.tarifs {
+    width: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+    .textes {
+        flex-wrap: wrap;
+    }
+
+    .textefootertarifs {
+        text-align: center;
+    }
+
+    .info {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .titretarifsfooter {
+        font-size: 18px;
+    }
+
+    .textefooter {
+        font-size: 16px;
+    }
+
+    .titretarifsfooter {
+        padding-top: 50px;
+    }
+    .mentions {
+        text-align: center;
+    }
+
+    .info {
+        max-width: 40%;
+    }
+}
+
+/* Bouton vert (réserver */
+
+.section-bouton {
+    margin-top: 50px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+a.boutonvert {
+    border: solid 2px #4a746b;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+}
+a.boutonvert:active {
+    animation: nope 0.4s forwards;
+}
+@keyframes nope {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(-15px);
+    }
+    40% {
+        transform: translateX(15px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
+    80% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+p.texteboutonvert {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #4a746b;
 }
