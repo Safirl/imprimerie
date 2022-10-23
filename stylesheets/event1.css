@@ -183,12 +183,12 @@ main {
         height: 110%;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 476px) {
     body {
         background: linear-gradient(
             180deg,
-            #d9d4c1 10%,
-            #f3f0e9 20%,
+            #d9d4c1 5%,
+            #f3f0e9 15%,
             #f3f0e9 100%
         );
     }
@@ -200,11 +200,18 @@ main {
 
     .lignea {
         left: 109px;
-        height: 185vh;
+        height: 170vh;
     }
 
     .texte .ligneb {
-        top: 404px;
+        top: 511px;
+        right: -4px;
+        display: none;
+    }
+
+    .texte .ligneb img {
+        margin: 0px;
+        padding: 0px;
     }
 
     .troisieme-partie .texte .lignec {
@@ -218,10 +225,11 @@ main {
     .troisieme-partie .texte .lignecter {
         z-index: -1;
         position: absolute;
-        top: 346px;
-        right: 416px;
+        top: 429px;
+        right: 339px;
         animation: apparition2 10s ease-out;
         transform: rotate(90deg);
+        display: none;
     }
 
     .article1 {
@@ -231,7 +239,7 @@ main {
 
     .titre h1 {
         margin-top: 20px;
-        font-size: 45px;
+        font-size: 36px;
         display: flex;
         justify-content: center;
         line-height: 54px;
@@ -279,20 +287,27 @@ main {
     .image2article1 img {
         margin: 0px;
         padding: 0px;
+        max-width: 80vw;
     }
 
-    .article1 .image3article1 {
+    .article1 .image3article1 img {
         padding: 0px;
         margin: 0px;
+        max-width: 80vw;
     }
 
     main .deuxieme-partie .texte .deuxieme-texte {
         margin-left: 20px;
     }
+
+    .mentions .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 476px) {
     .troisieme-partie .texte .lignecter {
         display: none;
     }
-}
+} */
