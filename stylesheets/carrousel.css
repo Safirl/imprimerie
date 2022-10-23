@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.splide, .carrousel{
+    z-index: -1;
+}
+
 .container-slider {
     max-width: 800px;
     margin: 0 auto;
