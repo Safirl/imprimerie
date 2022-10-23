@@ -17,6 +17,7 @@ main {
 
 .titre {
     position: relative;
+    z-index: -1;
 }
 
 .lignea {
@@ -67,9 +68,10 @@ main {
 } */
 
 .containerh1 {
+    position: relative;
     border-bottom: solid 1px #35140d;
     margin-bottom: 100px;
-    /* max-width: fit-content; */
+    z-index: 0;
 }
 
 .titre h1 {
@@ -78,6 +80,12 @@ main {
     margin-top: 10vw;
     font-size: 60px;
 }
+
+/* .containerh1 img {
+    position: absolute;
+    top: 97px;
+    left: 374px; */
+/* } */
 
 .fil-ariane {
     font-family: "Montserrat";
@@ -166,6 +174,16 @@ main {
     margin-bottom: 4%;
 }
 @media screen and (max-width: 1200px) {
+
+    body {
+        background: linear-gradient(
+            180deg,
+            #d9d4c1 10%,
+            #f3f0e9 15%,
+            #f3f0e9 100%
+        );
+    }
+
     .lignea {
         position: absolute;
         /* margin-left: 25vw;*/
@@ -306,8 +324,8 @@ main {
     } 
 }
 
-/* @media screen and (min-width: 476px) {
+@media screen and (min-width: 476px) {
     .troisieme-partie .texte .lignecter {
         display: none;
     }
-} */
+} 

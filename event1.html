@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>article1</title>
         <link rel="stylesheet" href="stylesheets/reset.css" />
-        <link rel="stylesheet" href="stylesheets/header.css" />
+        <link rel="stylesheet" href="stylesheets/headerv2.css">
+        <!-- <link rel="stylesheet" href="stylesheets/header.css" />  -->
         <link rel="stylesheet" href="stylesheets/footer.css" />
         <link rel="stylesheet" href="stylesheets/event1.css" />
         <link rel="stylesheet" href="typo/Montserrat-font/stylesheet.css" />
@@ -15,12 +16,12 @@
         <link rel="stylesheet" href="stylesheets/boutons.css" />
         <!-- <link rel="stylesheet" href="stylesheets/fil-ariane.css" /> -->
         <link rel="stylesheet" href="stylesheets/contenu.css" />
-        <link rel="stylesheet" href="stylesheets/carrousel.css" /> -->
+        <link rel="stylesheet" href="stylesheets/carrousel.css" />
         <link rel="stylesheet" href="stylesheets/splide.min.css" />
         <link rel="stylesheet" href="stylesheets/splider.css" />
     </head>
     <body>
-        <header>
+        <!-- <header>
             <nav class="nav-desktop">
                 <a href="index.html">
                     <img src="images/logo.svg" alt="MAI" />
@@ -45,6 +46,23 @@
                     <div class="traits-hamburger"></div>
                 </a>
             </nav>
+        </header> -->
+        <header>
+            <nav class="navbar dark-mode" role="navigation">
+                <ul class="navbar__links">
+                    <li><a class="logo" href="index.html"><img src="images/logo.svg" class="navbar__logo"></a></li>
+                    <li class="navbar__link first"><a href="#">agenda</a></li>
+                    <li class="navbar__link second"><a href="event1.html">expositions</a></li>
+                    <li class="navbar__link third"><a href="#footer">contact</a></li>
+                    <li><a class="loupe" href="#"><img src="images/loupe.svg"></a></li>
+                </ul>   
+                <div class="nav_mobil">
+                    <a href="index.html"><img src="images/logo.svg"></a>
+                    <button class="burger">
+                        <span class="bar"></span>  
+                    </button>
+                </div>   
+            </nav>
         </header>
         <main>
             <section class="titre">
@@ -62,6 +80,7 @@
                 </section>
                 <div class="containerh1">
                     <h1>Expositions secondaires</h1>
+                    <!-- <img src="images/affichage scroll.svg" alt="scrollez pour voir le contenu de l'exposition"> -->
                 </div>
             </section>
             <section
@@ -322,7 +341,7 @@
                 <img src="images/carrousel_images/Group 11.svg" />
             </div> -->
 
-        <footer>
+        <footer id="footer">
             <section class="container">
                 <div class="textes">
                     <div class="info">
@@ -414,5 +433,6 @@
                 });
             });
         </script>
+        <script src="js/header.js"></script>
     </body>
 </html>
